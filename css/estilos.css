@@ -1,0 +1,122 @@
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Fondo gris muy claro */
+    color: #333; /* Texto gris oscuro para mejor lectura */
+    line-height: 1.6;
+}
+
+/* --- ENCABEZADO Y MENÚ --- */
+header {
+    background-color: #003366; /* Azul oscuro industrial */
+    color: white;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #004080; /* Azul un poco más claro para el menú */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que se adapte en celulares */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0059b3; /* Cambia de color al pasar el mouse */
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 900px; /* Ancho máximo para que no se estire infinito */
+    margin: 30px auto; /* Centra el contenido en la pantalla */
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #004080;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p, ul, ol {
+    margin-bottom: 20px;
+}
+
+ul, ol {
+    margin-left: 40px;
+}
+
+/* --- IMÁGENES --- */
+img {
+    display: block;
+    max-width: 100%; /* La imagen nunca será más grande que la pantalla */
+    height: auto;
+    margin: 20px auto; /* Centra las imágenes */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- TABLAS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Filas intercaladas de color */
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
